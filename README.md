@@ -161,3 +161,31 @@ Algoritmo Ej12
     	// Mostramos el resultado
     	Escribir "La distancia entre los dos puntos es: ", distancia
 FinAlgoritmo
+
+Algoritmo Ej13
+Definir numero, raiz_cuadrada, raiz_cubica Como Real
+    // Pedimos el número al usuario
+    Escribir "Introduce un número:"
+    Leer numero
+    // Calculamos la raíz cuadrada
+    raiz_cuadrada <- Raiz(numero)
+    // Calculamos la raíz cúbica usando potenciación
+    raiz_cubica <- numero ^ (1/3)
+    // Mostramos los resultados
+    Escribir "La raíz cuadrada de ", numero, " es: ", raiz_cuadrada
+    Escribir "La raíz cúbica de ", numero, " es: ", raiz_cubica
+FinAlgoritmo
+
+Algoritmo Ej14
+Definir numero, decenas, unidades, numero_invertido Como Entero
+    // Pedimos al usuario que introduzca un número de dos cifras
+    Escribir "Introduce un número de dos cifras:"
+    Leer numero
+    // Obtenemos las decenas y unidades
+    decenas <- numero / 10  // División entera para obtener las decenas
+    unidades <- numero / 10  // Módulo para obtener las unidades
+    // Invertimos el número
+    numero_invertido <- (unidades * 10) + decenas
+    // Mostramos el número invertido
+    Escribir "El número invertido es: ",numero_invertido
+FinAlgoritmo
