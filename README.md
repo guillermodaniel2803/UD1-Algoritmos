@@ -48,3 +48,25 @@ Algoritmo Ej5
 	Escribir gradosC
 FinAlgoritmo
 
+
+Algoritmo Ej10
+	Definir calificacion1, calificacion2, calificacion3, promedio_parciales, examen_final, trabajo_final, calificacion_final Como Real
+    // Pedimos las tres calificaciones parciales
+    Escribir "Introduce la primera calificación parcial:"
+    Leer calificacion1
+    Escribir "Introduce la segunda calificación parcial:"
+    Leer calificacion2
+    Escribir "Introduce la tercera calificación parcial:"
+    Leer calificacion3
+    // Calculamos el promedio de las calificaciones parciales
+    promedio_parciales <- (calificacion1 + calificacion2 + calificacion3) / 3
+    // Pedimos la calificación del examen final y el trabajo final
+    Escribir "Introduce la calificación del examen final:"
+    Leer examen_final
+    Escribir "Introduce la calificación del trabajo final:"
+    Leer trabajo_final
+    // Calculamos la calificación final
+    calificacion_final <- (promedio_parciales * 0.55) + (examen_final * 0.30) + (trabajo_final * 0.15)
+    // Mostramos el resultado
+    Escribir "La calificación final en Algoritmos es: ", calificacion_final
+FinAlgoritmo
